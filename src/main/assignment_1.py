@@ -151,14 +151,13 @@ def newton_raphson(initial_approximation: float, tolerance: float, sequence: str
         initial_approximation -= approximation
         iteration_counter += 1
 
-    print(f"{iteration_counter}")
+    print(f"{iteration_counter}\n")
 
-if __name__ == "__main__":
-    # newton_raphson method
-    initial_approximation: float = -4
-    tolerance: float = 10 ** (-4)
-    sequence: str = "(x**3) + (4 * (x**2)) - 10"
+# newton_raphson method
+initial_approximation: float = -4
+tolerance: float = 10 ** (-4)
+sequence: str = "(x**3) + (4 * (x**2)) - 10"
 
-    newton_raphson(initial_approximation, tolerance, sequence)
+newton_raphson(initial_approximation, tolerance, sequence)
 
         
